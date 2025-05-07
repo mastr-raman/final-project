@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruchi's Bakery</title>
+  <meta name="description" content="Ruchi's Bakery in Gwalior offers fresh, homemade cakes, snacks, and more. Order today!">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .product-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .navbar-nav .nav-link {
+      margin-left: 15px;
+    }
+    .product-img-placeholder {
+      background-color: #f0f0f0;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: #888;
+    }
+    .carousel-item {
+      transition: transform 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Ruchi's Bakery</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#order">Place an Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="bg-warning text-center py-5">
+  <div class="container">
+    <h1 class="display-4">Welcome to Ruchi's Bakery</h1>
+    <p class="lead">Delicious, Fresh, and Made with Love in Gwalior</p>
+  </div>
+</header>
+
+<!-- About Us -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>Welcome to Ruchi's Bakery, a cozy spot in Gwalior where we bake fresh, delicious treats every day. From mouthwatering cakes to fluffy bread, we use only the finest ingredients to bring you the best in baked goods. Whether you're celebrating or simply craving a snack, Ruchi's Bakery is here to satisfy your sweet tooth with love and care in every bite!</p>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4">Our Products</h2>
+    <div class="row g-4">
+      <!-- Product Cards -->
+      <div class="col-md-4">
+        <div class="card">
+          <!-- Image with placeholder -->
+          <div class="product-img-placeholder">
+            <img src="img 1.jpg" alt="Fresh White Bread" class="card-img-top product-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fresh White Bread</h5>
+            <p>₹40 / loaf</p>
+            <button class="btn btn-success">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <!-- Image with placeholder -->
+          <div class="product-img-placeholder">
+            <img src="img 2.webp" alt="Multigrain Bread" class="card-img-top product-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Multigrain Bread</h5>
+            <p>₹55 / loaf</p>
+            <button class="btn btn-success">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <!-- Image with placeholder -->
+          <div class="product-img-placeholder">
+            <img src="img 3.jpg" alt="Chocolate Cake" class="card-img-top product-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Cake</h5>
+            <p>₹600 / cake</p>
+            <button class="btn btn-success">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <!-- Image with placeholder -->
+          <div class="product-img-placeholder">
+            <img src="img 4.jpeg" alt="Vanilla Cake" class="card-img-top product-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Vanilla Cake</h5>
+            <p>₹500 / cake</p>
+            <button class="btn btn-success">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <!-- Image with placeholder -->
+          <div class="product-img-placeholder">
+            <img src="img5.webp" alt="Fruit Cake" class="card-img-top product-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fruit Cake</h5>
+            <p>₹650 / cake</p>
+            <button class="btn btn-success">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <!-- Image with placeholder -->
+          <div class="product-img-placeholder">
+            <img src="img 6.jpg" alt="Cheese Cake" class="card-img-top product-img">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Cheese Cake</h5>
+            <p>₹700 / cake</p>
+            <button class="btn btn-success">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <h2>Customer Testimonials</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <blockquote class="blockquote">
+            <p>"Best dry cakes in town! Reminds me of home."</p>
+            <footer class="blockquote-footer">Ravi, Gwalior</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <p>"Love the cream rolls and patties – fresh every time!"</p>
+            <footer class="blockquote-footer">Anjali, Gwalior</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <p>"Fresh and delicious cakes, always a hit at our parties!"</p>
+            <footer class="blockquote-footer">Mohit, Gwalior</footer>
+          </blockquote>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">&copy; 2025 Ruchi's Bakery. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert("Thank you! We'll get back to you soon.");
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
